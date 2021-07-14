@@ -54,8 +54,11 @@ nav ul li:hover {
   transform: scale(1.3);
   transition: 0.5s ease-in-out;
 }
+/* header end here */
 
-/* first section start */
+
+
+/* first banner section start */
 .banner-top {
   display: flex;
   background-image: url(../images/shapes/Frame\ 58.jpg);
@@ -110,6 +113,9 @@ nav ul li:hover {
   transform: rotate(90deg) scale(0.5) translateY(-50%) translateX(50%);
 }
 /* banner section end here */
+
+
+/* player section start here */
 .players-details {
   margin: 50px 0px;
 }
@@ -117,12 +123,12 @@ nav ul li:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1.5em;
-  width: 1070px;
+  width: 1180px;
   margin: auto;
 }
 
 .players-card {
-  width: 310px;
+  width: 340px;
   padding: 10px 15px;
   box-shadow: rgb(0 0 0 / 20%) 0px 5px 20px;
   border-radius: 5px;
@@ -155,7 +161,7 @@ nav ul li:hover {
 
 /*kopa america winner section start hre */
 .winner-team {
-  width: 1200px;
+  width: 1180px;
   margin: auto;
   box-shadow: rgb(0 0 0 / 20%) 0px 5px 20px;
   padding: 30px 10px;
@@ -180,6 +186,64 @@ nav ul li:hover {
   display: flex;
   justify-content: center;
 }
+/* kopa america end here */
+
+
+/* blog section start here */
+.blog-details {
+  margin: 50px auto;
+  width: 1180px;
+}
+.blog-details h1 {
+    display: flex;
+    justify-content: center;
+    margin: 23px 0px;
+    font-size: 35px;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5em;
+
+}
+
+.blogs-card {
+  width: 340px;
+  padding: 10px 15px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 20px;
+  border-radius: 5px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.blogs-card img {
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.blogs-card:hover img {
+  width: 100%;
+  transform: scale(1.5);
+}
+.blogs-card h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #18191f;
+  margin: 4px 0px;
+}
+.blogs-card p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #6c6c6c;
+  margin-bottom: 20px;
+}
+.blogs-card a {
+  color: darkorange;
+}
+.blogs-card a:hover {
+  color: black;
+}
+/* blog section end here */
+
 
 /* highlight sections start here */
 .highlight {
@@ -224,6 +288,7 @@ nav ul li:hover {
   width: 100%;
   transition: transform 1s;
 }
+/* highlight end here */
 
 /* footer start here */
 footer {
@@ -262,11 +327,11 @@ footer p {
 /* footer end here */
 
 /*--------------------------------
- media quaries start here 
-this is responsive for iphone 6/7/8 
+ media quaries start here  this is responsive for 425*550, 
+This size recommended by Muktadir Hasan in a group comment
 ---------------------------------*/
 
-@media screen and (max-width: 690px) and (min-width: 370px) {
+@media screen and (max-width: 550px) and (min-width: 425px) {
   header {
     display: none !important;
   }
@@ -312,7 +377,7 @@ this is responsive for iphone 6/7/8
   }
   .winner-team {
     width: auto;
-        margin: 0px 10px;
+    margin: 0px 20px;
   }
   .winner-team-details {
     display: grid;
@@ -330,12 +395,28 @@ this is responsive for iphone 6/7/8
     font-size: 24px;
     padding: 15px;
   }
+  .blog-details {
+    width: auto;
+}
+  .container {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+}
+
   .highlight {
     padding: 0px 20px;
   }
-  
+
   footer {
     margin: auto;
     width: min-content;
   }
 }
+
+/* media query finally end here */
