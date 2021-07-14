@@ -105,10 +105,10 @@ nav ul li:hover {
   width: 100%;
   transition: transform 1s;
 }
-/* .banner-img img:hover {
+.banner-img img:hover {
   width: 100%;
   transform: rotate(90deg) scale(0.5) translateY(-50%) translateX(50%);
-} */
+}
 /* banner section end here */
 .players-details {
   margin: 50px 0px;
@@ -153,11 +153,39 @@ nav ul li:hover {
 
 /* players end here */
 
+/*kopa america winner section start hre */
+.winner-team {
+  width: 1200px;
+  margin: auto;
+  box-shadow: rgb(0 0 0 / 20%) 0px 5px 20px;
+  padding: 30px 10px;
+}
+.winner-team h1 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #0a0826;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.winner-team-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.winner-team-details h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0a0826;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+
 /* highlight sections start here */
 .highlight {
   display: flex;
   align-items: center;
-  height: 680px;
+  height: 640px;
 }
 .highlight .container {
   width: 1180px;
@@ -233,8 +261,10 @@ footer p {
 }
 /* footer end here */
 
-/* media quaries start here */
-/* this is responsive for iphone 6/7/8 */
+/*--------------------------------
+ media quaries start here 
+this is responsive for iphone 6/7/8 
+---------------------------------*/
 
 @media screen and (max-width: 690px) and (min-width: 370px) {
   header {
@@ -262,7 +292,8 @@ footer p {
     grid-template-columns: repeat(1, 1fr);
   }
   .highlight-desc h1 {
-    font-size: 40px;
+    font-size: 34px;
+    margin-top: 10px;
   }
 
   .highlight-desc {
@@ -271,7 +302,7 @@ footer p {
   .players {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 2em;
+    grid-gap: 1.5em;
     width: auto;
     margin: auto;
   }
@@ -279,9 +310,30 @@ footer p {
     margin: 30px auto;
     display: flex;
   }
+  .winner-team {
+    width: auto;
+        margin: 0px 10px;
+  }
+  .winner-team-details {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .winner-team-details iframe {
+    width: 100%;
+  }
+  .winner-team h1 {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 10px 10px;
+  }
+  .winner-team-details h2 {
+    font-size: 24px;
+    padding: 15px;
+  }
   .highlight {
     padding: 0px 20px;
-}
+  }
+  
   footer {
     margin: auto;
     width: min-content;
