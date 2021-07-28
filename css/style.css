@@ -328,7 +328,7 @@ footer p {
 This size recommended by Muktadir Hasan in a group comment
 ---------------------------------*/
 
-@media screen and (max-width: 550px) and (min-width: 425px) {
+@media screen and (max-width: 688px) {
   header {
     display: none !important;
   }
